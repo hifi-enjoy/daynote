@@ -1,0 +1,67 @@
+GoalDiary/
+│
+├── AGENTS.md
+├── PRD.md
+├── TECH_SPEC.md
+├── README.md
+├── .gitignore
+│
+├── gradle/
+│   └── ...
+│
+├── gradlew
+├── gradlew.bat
+├── settings.gradle.kts
+├── build.gradle.kts
+│
+├── app/
+│   ├── build.gradle.kts
+│   │
+│   └── src/
+│       ├── main/
+│       │   │
+│       │   ├── AndroidManifest.xml
+│       │   │
+│       │   ├── java/
+│       │   │   └── com/
+│       │   │       └── goaldiary/
+│       │   │           ├── GoalDiaryApplication.kt
+│       │   │           │
+│       │   │           ├── core/
+│       │   │           │   ├── common/
+│       │   │           │   ├── database/
+│       │   │           │   ├── model/
+│       │   │           │   ├── storage/
+│       │   │           │   ├── media/
+│       │   │           │   ├── network/
+│       │   │           │   └── ui/
+│       │   │           │
+│       │   │           ├── feature/
+│       │   │           │   ├── home/
+│       │   │           │   ├── goals/
+│       │   │           │   ├── events/
+│       │   │           │   ├── feedback/
+│       │   │           │   ├── fitness/
+│       │   │           │   ├── study/
+│       │   │           │   ├── focus/
+│       │   │           │   └── settings/
+│       │   │           │
+│       │   │           └── navigation/
+│       │   │
+│       │   └── res/
+│       │       ├── drawable/
+│       │       ├── mipmap/
+│       │       ├── values/
+│       │       └── raw/
+│       │
+│       └── test/
+│           └── java/
+│
+├── docs/
+│   ├── architecture/
+│   ├── decisions/
+│   └── development/
+│
+└── .github/
+    └── workflows/
+        └── ...
