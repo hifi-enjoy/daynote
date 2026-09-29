@@ -1,0 +1,241 @@
+You are the lead Android engineer for this project.
+
+Before doing anything, read:
+
+* AGENTS.md
+* PRD.md
+* TECH_SPEC.md
+
+The project is an offline-first Android application called GoalDiary.
+
+The product will eventually support:
+
+* SMART goals
+* short-term goals
+* daily goals
+* scheduling
+* recurring events
+* event feedback
+* image/audio/video feedback
+* positive reinforcement
+* fitness templates
+* study/reading records
+* backup/restore
+* optional LAN PC access
+* focus mode
+
+However, this is ONLY PHASE 1.
+
+Do not implement the business features yet.
+
+## Phase 1 Objective
+
+Create a clean, buildable Android application foundation that can support the future features without unnecessary complexity.
+
+## Tasks
+
+### 1. Inspect the repository
+
+Determine whether the repository is empty or already contains an Android project.
+
+Do not delete existing user files without confirmation.
+
+### 2. Create the Android project
+
+If the repository is empty, create a standard Android application project.
+
+Use:
+
+* Kotlin
+* Jetpack Compose
+* Material 3
+* Gradle Kotlin DSL
+
+Use current stable Android tooling and libraries that are appropriate for the environment.
+
+Do not add experimental libraries unless necessary.
+
+### 3. Establish the package structure
+
+Use:
+
+com.goaldiary
+
+with the following conceptual structure:
+
+core/
+common/
+database/
+model/
+storage/
+media/
+network/
+ui/
+
+feature/
+home/
+goals/
+events/
+feedback/
+fitness/
+study/
+focus/
+settings/
+
+navigation/
+
+Do not create unnecessary implementation files for features that are not yet being implemented.
+
+### 4. Application class
+
+Create the application entry point:
+
+GoalDiaryApplication
+
+Keep it minimal.
+
+Do not initialize unnecessary services.
+
+### 5. Compose UI foundation
+
+Create a Material 3 theme.
+
+Create a root application composable.
+
+Create navigation infrastructure for these future destinations:
+
+* Home
+* Schedule
+* Goals
+* Records
+* Settings
+
+For now, the destinations may contain placeholder screens.
+
+### 6. Home screen
+
+Create a minimal Home screen.
+
+It should visually communicate:
+
+* today's date
+* current long-term goal placeholder
+* current short-term goal placeholder
+* today's progress placeholder
+* today's events placeholder
+
+Do NOT create fake persistent data.
+
+Clearly label placeholders as placeholders if needed.
+
+### 7. Bottom navigation
+
+Create:
+
+Home
+Schedule
+Goals
+Records
+Settings
+
+Navigation must work between the screens.
+
+### 8. Prepare testing
+
+Set up the testing infrastructure appropriate for:
+
+* unit tests
+* Compose/UI tests
+
+Create at least one simple test verifying that the application foundation works.
+
+Do not create meaningless tests just to increase test count.
+
+### 9. Room preparation
+
+Do NOT implement the complete database schema yet.
+
+Only prepare the architecture/package location for the future Room database.
+
+If a minimal Room setup is required for architectural reasons, keep it minimal and explain why.
+
+### 10. Data layer
+
+Do not create fake repositories.
+
+Do not create fake database data.
+
+Do not implement Goal/Event/Feedback repositories yet.
+
+### 11. Documentation
+
+Create or update:
+
+README.md
+
+The README should explain:
+
+* what GoalDiary is
+* current development phase
+* technology stack
+* how to build
+* how to run tests
+* current limitations
+
+### 12. Git
+
+If Git is not initialized, initialize it.
+
+Do not commit automatically unless explicitly requested.
+
+### 13. Verification
+
+Run the appropriate commands to verify:
+
+* project configuration
+* compilation
+* unit tests
+* Compose/UI tests where practical
+
+Fix any errors you encounter.
+
+Do not skip failing tests.
+
+## Important Constraints
+
+Do NOT:
+
+* implement SMART goals
+* implement event database
+* implement recurring events
+* implement feedback
+* implement media handling
+* implement fitness
+* implement study
+* implement mind maps
+* implement LAN
+* implement PC synchronization
+* implement system-level app locking
+* add authentication
+* add cloud services
+* add analytics
+* add advertisements
+
+This phase is only about creating a clean foundation.
+
+## Completion Report
+
+When finished, report:
+
+1. Files created
+2. Files modified
+3. Architecture decisions
+4. Dependencies added
+5. Build command used
+6. Build result
+7. Test commands used
+8. Test result
+9. Known limitations
+10. Recommended next development task
+
+Do not claim success unless the project actually builds successfully.
